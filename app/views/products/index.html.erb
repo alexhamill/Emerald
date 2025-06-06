@@ -1,0 +1,12 @@
+<%= render 'partials/navbar' %>
+<h1 class="tittle">Store Products</h1>
+<div class="products">
+  <% @products.each do |product| %>
+    <div class="product">
+        
+        <strong><%= product.name %></strong><br>
+        <%= product.price %><br>
+        <%= product.description %>
+    </div>
+  <% end %>
+</div>

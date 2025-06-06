@@ -1,0 +1,14 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}

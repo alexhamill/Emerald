@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @title = "Welcome to Our Application"
+    @title = "Hi Use the Mine to earn emeralds and buy products!"
   end
 end

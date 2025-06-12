@@ -1,6 +1,9 @@
 <nav class="navbar">
     <%= link_to "Home", welcome_path %>
     <%= link_to "Products", products_path %>
+    <%= link_to "Mine", mine_path %>
     <%= link_to image_tag('logo.png', alt: 'Logo', class: 'logo'), root_path, class: 'logo-link' %>
-    <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    <% if user_signed_in? %>
+        <a rel="nofollow" data-turbo-method="delete" href="/users/sign_out">Sign Out</a>
+    <% end %>
 </nav>

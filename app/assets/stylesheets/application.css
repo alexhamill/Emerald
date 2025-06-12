@@ -2,14 +2,16 @@
 /*
   *= require navbar
   *= require store
+  *= require mine
   *= require login
  */
 
- body {
+ body, html {
    font-family: Arial, sans-serif;
    margin: 0;
    padding: 0;
    background-color: #ffffff;
+   /* overflow: hidden; */
  }
 
  .tittle {
@@ -52,4 +54,14 @@
 
 .padding {
   padding: 20px;
+}
+
+.alert,.notice {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  min-width: 300px;
+  max-width: 90%;
 }

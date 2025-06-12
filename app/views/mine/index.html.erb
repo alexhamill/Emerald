@@ -1,0 +1,9 @@
+<%= render 'partials/navbar' %>
+<div class="mine-content"> 
+<turbo-frame id="emerald-count">
+    <p>You have <%= @user.emeralds %> emeralds!</p>
+</turbo-frame>
+<div class="emerald-buttons">
+<%= button_to image_tag('rawemerald.png', alt: 'em', height: '500'), add_emeralds_path, method: :post, class: "em-btn", style: "cursor: url(#{asset_path('pickaxe.png')}), pointer;" %>
+</div>
+</div>

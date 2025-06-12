@@ -7,6 +7,15 @@
         <strong><%= product.name %></strong><br>
         <%= product.price %><br>
         <%= product.description %>
+        <%= button_to "Buy", add_to_owned_product_path(product), method: :post %>
     </div>
   <% end %>
+  <h2>Your Owned Products</h2>
+<div class="owned-products">
+  <% @ownerships.each do |ownership| %>
+    <div class="owned-product">
+      <strong><%= ownership.product.name %></strong>
+    </div>
+  <% end %>
+</div>
 </div>

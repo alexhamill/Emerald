@@ -2,6 +2,9 @@
   background-color: #33333300;
   overflow: hidden;
   border-bottom: 2px solid #39b030;
+  /* position: absolute;
+  top: 0;
+  width: 100vw; */
 }
     
 .navbar a {
